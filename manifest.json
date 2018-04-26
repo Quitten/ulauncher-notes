@@ -1,0 +1,27 @@
+{
+  "manifest_version": "2",
+  "api_version": "1",
+  "name": "Notes",
+  "description": "Notes extension",
+  "developer_name": "Barak Tawily",
+  "icon": "note.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "note",
+      "type": "keyword",
+      "name": "Note",
+      "description": "Writing note",
+      "default_value": "note"
+    },
+    {
+      "id": "notes",
+      "type": "keyword",
+      "name": "Notes",
+      "description": "Reading notes",
+      "default_value": "notes"
+    }
+  ]
+}
