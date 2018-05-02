@@ -5,7 +5,8 @@ from ulauncher.api.shared.item.ExtensionResultItem import ExtensionResultItem
 from ulauncher.api.shared.action.RenderResultListAction import RenderResultListAction
 from ulauncher.api.shared.action.HideWindowAction import HideWindowAction
 from ulauncher.api.shared.action.ExtensionCustomAction import ExtensionCustomAction
-import json, uuid, pyperclip
+from os.path import expanduser
+import os, json, uuid, pyperclip
 
 class NotesExtension(Extension):
     def __init__(self):
@@ -13,6 +14,12 @@ class NotesExtension(Extension):
         self.subscribe(KeywordQueryEvent, KeywordQueryEventListener())
         self.subscribe(ItemEnterEvent, ItemEnterEventListener())
 
+home = expanduser("~")
+notesFilePath = '%s/.notes' % home 
+if not os.path.isfile(notesFilePath):
+    f = open(notesFilePath, 'w')
+    f.close()
+    
 notesFilePath = '/home/barak/.notes'
 
 def saveNote(note):
