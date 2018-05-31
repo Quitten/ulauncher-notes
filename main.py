@@ -19,8 +19,6 @@ notesFilePath = '%s/.notes' % home
 if not os.path.isfile(notesFilePath):
     f = open(notesFilePath, 'w')
     f.close()
-    
-notesFilePath = '/home/barak/.notes'
 
 def saveNote(note):
     note['id'] = str(uuid.uuid4())
