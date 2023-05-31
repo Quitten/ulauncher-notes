@@ -6,7 +6,7 @@ from ulauncher.api.shared.action.RenderResultListAction import RenderResultListA
 from ulauncher.api.shared.action.HideWindowAction import HideWindowAction
 from ulauncher.api.shared.action.ExtensionCustomAction import ExtensionCustomAction
 from os.path import expanduser
-import os, json, uuid, pyperclip
+import os, json, uuid, pyclip #pyperclip
 
 
 class NotesExtension(Extension):
@@ -40,7 +40,7 @@ def deleteNote(deleteNote):
 
 
 def copyToClipboard(note):
-    pyperclip.copy(note['data'])
+    pyclip.copy(note['data'])
 
 
 def getNotes():
