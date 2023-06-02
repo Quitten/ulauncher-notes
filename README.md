@@ -7,7 +7,7 @@ Install dependencies:
 
 ```
 pip install uuid
-pip install pyperclip
+pip install pyclip
 ```
 
 ![Example image](https://raw.githubusercontent.com/Quitten/ulauncher-notes/master/notes.gif)
