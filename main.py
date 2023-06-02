@@ -6,7 +6,7 @@ from ulauncher.api.shared.action.RenderResultListAction import RenderResultListA
 from ulauncher.api.shared.action.HideWindowAction import HideWindowAction
 from ulauncher.api.shared.action.ExtensionCustomAction import ExtensionCustomAction
 from os.path import expanduser
-import os, json, uuid, pyclip #pyperclip
+import os, json, uuid, pyclip
 
 
 class NotesExtension(Extension):
